@@ -14,12 +14,14 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper"><a href="#" class="header-logo"><img src="img/logo.svg" alt="alt"></a>
-        <ul class="header-menu">
-          <li class="active"><a href="#">Все курсы </a></li>
-          <li><a href="#">Статьи и видео</a></li>
-        </ul>
-        <div class="header-right"><a href="tel" class="header-tel">8-000-200-05-18</a><a href="#" class="header-account">Выйти</a></div>
+      <div class="wrapper">
+        <div class="header-inner"><a href="#" class="header-logo"><img src="img/logo.svg" alt="alt"></a>
+          <ul class="header-menu">
+            <li class="active"><a href="#">Все курсы </a></li>
+            <li><a href="#">Статьи и видео</a></li>
+          </ul>
+          <div class="header-right"><a href="tel" class="header-tel">8-000-200-05-18</a><a href="#" class="header-account">Выйти</a></div>
+        </div>
       </div>
     </header>
     <main class="ams-main">
@@ -34,74 +36,40 @@
         </div>
         <div class="wrapper ams-main__content-wrapper">
           <div class="ams-left">
-            <div class="ams-video">
-              <iframe src="https://www.youtube.com/embed/D3b-GSjI4Js" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="ams-video-bottom">
-              <div class="ams-video-bottom__date">
-                <div class="svg-icon time-icon"></div><span>22 октября, 20:00, МСК</span>
+            <div class="ams-left__top">
+              <div class="ams-video">
+                <iframe src="https://www.youtube.com/embed/D3b-GSjI4Js" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div class="ams-video-bottom__share">
-                <div class="svg-icon share-icon"></div><span>Поделиться</span>
-                <ul class="ams-socials">
-                  <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/fb.svg" alt="alt"></a></li>
-                  <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/vk.svg" alt="alt"></a></li>
-                  <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/tg.svg" alt="alt"></a></li>
-                </ul>
+              <div class="ams-video-bottom">
+                <div class="ams-video-bottom__date">
+                  <div class="svg-icon time-icon"></div><span>22 октября, 20:00, МСК</span>
+                </div>
+                <div class="ams-video-bottom__share">
+                  <div class="svg-icon share-icon"></div><span>Поделиться</span>
+                  <ul class="ams-socials">
+                    <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/fb.svg" alt="alt"></a></li>
+                    <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/vk.svg" alt="alt"></a></li>
+                    <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/tg.svg" alt="alt"></a></li>
+                  </ul>
+                </div>
+                <div class="ams-video-bottom__registered"><span><span>Уже</span><span class="registered-hidden-mob">зарегистрировано:</span></span>
+                  <div class="ams-video__registered-val">789<span>чел.</span></div>
+                </div>
+              </div><a href="#" class="button button-wide button-blue button-lg">Получить специальное предложение</a><a href="#" class="button button-empty button-lg button-wide to-comment">Перейти к комментариям</a>
+            </div>
+            <div class="ams-text-content">
+              <!-- - for (var i=0; i < 5; i++)-->
+              <div class="ams-text-block">
+                <p>Здравствуйте, дорогие друзья, наше занятие будет проходить в формате вебинара.</p>
+                <div class="ams-text-block__title">Часто задаваемые вопросы:</div>
+                <ol class="ams-num-list">
+                  <li>Интенсив состоит из одного урока, рассчитан на новичков и на тех, кто вообще ни разу не смотрел.</li>
+                  <li>Продолжительность урока примерно 2 часа, в середине будет перерыв 10 минут.</li>
+                  <li>Возраст значения не имеет.</li>
+                  <li>Дз не предусмотрено.</li>
+                </ol><a href="#" class="ams-link">Дополнительные материалы</a>
+                <div class="ams-text-block__bottom"><a href="#" class="ams-text-block__more">Скрыть описание</a></div>
               </div>
-              <div class="ams-video-bottom__registered"><span>Уже зарегистрировано:</span>
-                <div class="ams-video__registered-val">789</div>
-              </div>
-            </div><a href="#" class="button button-wide button-blue button-lg">Получить специальное предложение</a>
-            <div class="ams-text-block">
-              <p>Здравствуйте, дорогие друзья, наше занятие будет проходить в формате вебинара.</p>
-              <div class="ams-text-block__title">Часто задаваемые вопросы:</div>
-              <ol class="ams-num-list">
-                <li>Интенсив состоит из одного урока, рассчитан на новичков и на тех, кто вообще ни разу не смотрел.</li>
-                <li>Продолжительность урока примерно 2 часа, в середине будет перерыв 10 минут.</li>
-                <li>Возраст значения не имеет.</li>
-                <li>Дз не предусмотрено.</li>
-              </ol><a href="#">Дополнительные материалы</a>
-            </div>
-            <div class="ams-text-block">
-              <p>Здравствуйте, дорогие друзья, наше занятие будет проходить в формате вебинара.</p>
-              <div class="ams-text-block__title">Часто задаваемые вопросы:</div>
-              <ol class="ams-num-list">
-                <li>Интенсив состоит из одного урока, рассчитан на новичков и на тех, кто вообще ни разу не смотрел.</li>
-                <li>Продолжительность урока примерно 2 часа, в середине будет перерыв 10 минут.</li>
-                <li>Возраст значения не имеет.</li>
-                <li>Дз не предусмотрено.</li>
-              </ol><a href="#">Дополнительные материалы</a>
-            </div>
-            <div class="ams-text-block">
-              <p>Здравствуйте, дорогие друзья, наше занятие будет проходить в формате вебинара.</p>
-              <div class="ams-text-block__title">Часто задаваемые вопросы:</div>
-              <ol class="ams-num-list">
-                <li>Интенсив состоит из одного урока, рассчитан на новичков и на тех, кто вообще ни разу не смотрел.</li>
-                <li>Продолжительность урока примерно 2 часа, в середине будет перерыв 10 минут.</li>
-                <li>Возраст значения не имеет.</li>
-                <li>Дз не предусмотрено.</li>
-              </ol><a href="#">Дополнительные материалы</a>
-            </div>
-            <div class="ams-text-block">
-              <p>Здравствуйте, дорогие друзья, наше занятие будет проходить в формате вебинара.</p>
-              <div class="ams-text-block__title">Часто задаваемые вопросы:</div>
-              <ol class="ams-num-list">
-                <li>Интенсив состоит из одного урока, рассчитан на новичков и на тех, кто вообще ни разу не смотрел.</li>
-                <li>Продолжительность урока примерно 2 часа, в середине будет перерыв 10 минут.</li>
-                <li>Возраст значения не имеет.</li>
-                <li>Дз не предусмотрено.</li>
-              </ol><a href="#">Дополнительные материалы</a>
-            </div>
-            <div class="ams-text-block">
-              <p>Здравствуйте, дорогие друзья, наше занятие будет проходить в формате вебинара.</p>
-              <div class="ams-text-block__title">Часто задаваемые вопросы:</div>
-              <ol class="ams-num-list">
-                <li>Интенсив состоит из одного урока, рассчитан на новичков и на тех, кто вообще ни разу не смотрел.</li>
-                <li>Продолжительность урока примерно 2 часа, в середине будет перерыв 10 минут.</li>
-                <li>Возраст значения не имеет.</li>
-                <li>Дз не предусмотрено.</li>
-              </ol><a href="#">Дополнительные материалы</a>
             </div>
           </div>
           <div class="comments-container">
@@ -229,108 +197,6 @@
                   </div>
                 </div>
               </div>
-              <div class="comment">
-                <div class="comment-header">
-                  <div class="comment-header__user">
-                    <div class="ams-userpic">
-                      <div class="ams-userpic__inner"><img src="img/sting.jpg" alt="alt"></div><a href="#" class="ams-socials__item ams-socials__item--sm"><img src="img/icons-svg/fb.svg" alt="alt"></a>
-                    </div>
-                    <div class="user-info">
-                      <div class="user-info__name">Стинг Полисович</div>
-                      <div class="user-info__date">2 дня назад</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comment-body">А первый день где-то можно посмотреть? А то ничего не успел.</div>
-                <div class="comment-bottom"><a href="#" class="ams-link">Ответить</a>
-                  <div class="comment-score">
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/like.svg" alt="alt"></a><span class="comment-like__count">584</span></div>
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/dislike.svg" alt="alt"></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="comment-header">
-                  <div class="comment-header__user">
-                    <div class="ams-userpic">
-                      <div class="ams-userpic__inner"><img src="img/boris.jpg" alt="alt"></div><a href="#" class="ams-socials__item ams-socials__item--sm"><img src="img/icons-svg/fb.svg" alt="alt"></a>
-                    </div>
-                    <div class="user-info">
-                      <div class="user-info__name">Борис Борисович</div>
-                      <div class="user-info__date">2 дня назад</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comment-body">Я сегодня изучал иллюстратор, чтоб подготовить макет. Почти изучил.</div>
-                <div class="comment-bottom"><a href="#" class="ams-link">Ответить</a>
-                  <div class="comment-score">
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/like.svg" alt="alt"></a><span class="comment-like__count">584</span></div>
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/dislike.svg" alt="alt"></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="comment comment-answer">
-                <div class="comment-header">
-                  <div class="comment-header__user">
-                    <div class="ams-userpic">
-                      <div class="ams-userpic__inner"><img src="img/sting.jpg" alt="alt"></div><a href="#" class="ams-socials__item ams-socials__item--sm"><img src="img/icons-svg/tg.svg" alt="alt"></a>
-                    </div>
-                    <div class="user-info">
-                      <div class="user-info__name">Стинг Полисович</div>
-                      <div class="user-info__date">2 дня назад</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comment-body">Лучше быпоказался врачу и репетировал</div>
-                <div class="comment-bottom"><a href="#" class="ams-link">Ответить</a>
-                  <div class="comment-score">
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/like.svg" alt="alt"></a><span class="comment-like__count">584</span></div>
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/dislike.svg" alt="alt"></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="comment">
-                <div class="comment-header">
-                  <div class="comment-header__user">
-                    <div class="ams-userpic">
-                      <div class="ams-userpic__inner"><img src="img/sting.jpg" alt="alt"></div><a href="#" class="ams-socials__item ams-socials__item--sm"><img src="img/icons-svg/tg.svg" alt="alt"></a>
-                    </div>
-                    <div class="user-info">
-                      <div class="user-info__name">Коллинз Филлинз</div>
-                      <div class="user-info__date">2 дня назад</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comment-body">Барабаны лучший инструмент!</div>
-                <div class="comment-bottom"><a href="#" class="ams-link">Ответить</a>
-                  <div class="comment-score">
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/like.svg" alt="alt"></a><span class="comment-like__count">584</span></div>
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/dislike.svg" alt="alt"></a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="comment comment-answer">
-                <div class="comment-header">
-                  <div class="comment-header__user">
-                    <div class="ams-userpic">
-                      <div class="ams-userpic__inner"><img src="img/sting.jpg" alt="alt"></div><a href="#" class="ams-socials__item ams-socials__item--sm"><img src="img/icons-svg/tg.svg" alt="alt"></a>
-                    </div>
-                    <div class="user-info">
-                      <div class="user-info__name">Стинг Полисович</div>
-                      <div class="user-info__date">2 дня назад</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="comment-body">+</div>
-                <div class="comment-bottom"><a href="#" class="ams-link">Ответить</a>
-                  <div class="comment-score">
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/like.svg" alt="alt"></a><span class="comment-like__count">584</span></div>
-                    <div class="comment-like"><a href="#" class="comment-like__icon"><img src="img/icons-svg/dislike.svg" alt="alt"></a></div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -344,6 +210,19 @@
             <input type="checkbox"><span class="ams-custom-checkbox"></span><span class="ams-policy">Согласен с <a href="#" class="ams-link">условиями обработки</a> персональных данных</span>
           </label>
           <button class="button">отправить</button>
+        </form>
+      </div>
+      <div id="ams-socials-popup" class="ams-popup mfp-hide">
+        <h4>Авторизуйтесь на сайте</h4>
+        <ul class="ams-socials">
+          <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/fb.svg" alt="alt"></a></li>
+          <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/vk.svg" alt="alt"></a></li>
+          <li><a href="#" class="ams-socials__item"><img src="img/icons-svg/tg.svg" alt="alt"></a></li>
+        </ul>
+        <form action="#">
+          <label class="ams-customed-label">
+            <input type="checkbox"><span class="ams-custom-checkbox"></span><span class="ams-policy">Авторизуясь, вы соглашаетесь с правилами пользования сайтом и даете согласие на обработку <a href="#" class="ams-link">персональных данных</a></span>
+          </label>
         </form>
       </div>
     </main>

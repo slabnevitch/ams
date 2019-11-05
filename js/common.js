@@ -22,12 +22,16 @@
 		console.log('videoTop= ' + videoTop);
 		
 		if(pageYOffset > videoTop /*&& scrolledNum < docHeight*/){
+			if(screen.width >= 992){
 				document.querySelector('.ams-main').classList.add('scrolled');
-				$elem.css('width', elemWidth  + 'px');
+				$elem.css('width', elemWidth  + 'px');		
+			}
 		}else{
-			console.log('else condition is comming');
-			$elem.removeAttr('style');
+			if(screen.width >= 992){
+				$elem.removeAttr('style');
 				document.querySelector('.ams-main').classList.remove('scrolled');
+			
+			}
 
 		}
 
@@ -35,10 +39,20 @@
 	});
 	
 
+	$('.to-comment').click(function(e){
+		if(screen.width <= 992){
+			e.preventDefault();
+			var sectionCoord = $('.comments-container').offset().top - 30;
+			
+			$('html, body').animate({scrollTop: sectionCoord}, 800);
+			
+		}
+	});
+
 	$(document).ready(function() {
 		$.magnificPopup.open({
 			items: {
-				src: $('#ams-phone-popup')
+				src: $('#ams-socials-popup')
 			},
 			type: 'inline'
 
