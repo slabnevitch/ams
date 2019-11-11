@@ -1,33 +1,34 @@
 (function() {
 
-  var videoTop = document.querySelector('.header').getBoundingClientRect().height + document.querySelector('.ams-content__header').getBoundingClientRect().height;
-	// console.log('videoTop= ' + videoTop);
-	// console.log('pageYOffset= ' + pageYOffset );
+  	var videoTop = document.querySelector('.header').getBoundingClientRect().height + document.querySelector('.ams-content__header').getBoundingClientRect().height;
 	var $elem = $('.ams-left');
-	var elemWidth = $elem.width();
+	var elemWidth = $('.ams-main__content-wrapper').width() / 100 * 66.66667 - 30;
+	var yOffset;
+
+	window.onresize = function() {
+		if(getScreenWidth() == true && getScrollCondition(yOffset) == true){
+			$elem.css('width',  $('.ams-main__content-wrapper').width() / 100 * 66.66667 - 30 + 'px');
+		}
+		if(getScreenWidth() == false){
+			document.querySelector('.ams-main').classList.remove('scrolled');
+			$elem.removeAttr('style');
+		}
+	}
 
 	window.addEventListener('scroll', function() {
-		// console.log(this);
 		var scrolledNum = $(window).scrollTop()+$(window).height(),
 				docHeight = $(document).height();
 
-		// if(scrolledNum >= docHeight){
-		// 	console.log('ура! конец страницы!');
-		// 	document.querySelector('.ams-main__content-wrapper').classList.add('aligned-end');
-		// 	document.querySelector('.ams-main').classList.remove('scrolled');
-		// }else{
-		// 	document.querySelector('.ams-main__content-wrapper').classList.remove('aligned-end');
-		// }
-		console.log('pageYOffset= ' + pageYOffset );
-		console.log('videoTop= ' + videoTop);
+		yOffset = pageYOffset;
 		
-		if(pageYOffset > videoTop /*&& scrolledNum < docHeight*/){
-			if(screen.width >= 992){
+		if(getScrollCondition(yOffset) == true){
+			if(getScreenWidth() == true){
+
 				document.querySelector('.ams-main').classList.add('scrolled');
-				$elem.css('width', elemWidth  + 'px');		
+				$elem.css('width',  $('.ams-main__content-wrapper').width() / 100 * 66.66667 - 30  + 'px');		
 			}
 		}else{
-			if(screen.width >= 992){
+			if(getScreenWidth() == true){
 				$elem.removeAttr('style');
 				document.querySelector('.ams-main').classList.remove('scrolled');
 			
@@ -38,6 +39,18 @@
 
 	});
 	
+	function getScreenWidth(){
+		var condition;
+		screen.width >= 992 ? condition = true : condition = false;
+
+		return condition;
+	}
+
+	function getScrollCondition(yOffset){
+		var scrollCond;
+		yOffset > videoTop ? scrollCond = true : scrollCond = false;
+		return scrollCond;
+	}
 
 	$('.to-comment').click(function(e){
 		if(screen.width <= 992){
